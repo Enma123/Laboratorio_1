@@ -1,6 +1,7 @@
 package test;
 
 import carros.CarroBase;
+import carros.Crossover;
 import carros.Pickup;
 import carros.Sedan;
 import carros.Suv;
@@ -24,7 +25,8 @@ public class Test {
 		CarroBase carro = new Sedan(motorGasolina);//polimorfismo
 		carro.imprimirCategoria();
 		
-		
+		CarroBase crossover = new Crossover(motorGasolina);
+		crossover.imprimirCategoria();
 		
 		
 		
