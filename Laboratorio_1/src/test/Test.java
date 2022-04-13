@@ -5,6 +5,7 @@ import carros.Crossover;
 import carros.Sedan;
 import motores.MotorDiesel;
 import motores.MotorGasolina;
+import carros.Pickup;
 
 public class Test {
 	
@@ -21,6 +22,10 @@ public class Test {
 		
 		//inyectando una instancia de motor gasolina al carro sedan
 		//esto lo permite el polimorfismo
+		
+		CarroBase pickup = new Pickup(motorGasolina);
+		pickup.imprimirCategoria();
+		
 		CarroBase carro = new Sedan(motorGasolina);//polimorfismo
 		carro.imprimirCategoria();
 		
